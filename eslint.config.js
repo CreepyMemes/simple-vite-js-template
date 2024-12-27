@@ -12,7 +12,10 @@ export default [
 
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        globals.browser, 
+        "__dirname": true
+      },
 
       parserOptions: {
         sourceType: 'module',
