@@ -13,8 +13,8 @@ export default [
     languageOptions: {
       ecmaVersion: 2020,
       globals: {
-        globals.browser, 
-        "__dirname": true
+        ...globals.browser,
+        __dirname: true,
       },
 
       parserOptions: {
